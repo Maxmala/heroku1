@@ -7,15 +7,32 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Movie.destroy_all
+Director.destroy_all
 
 
-  movies = Movie.create(title: "Star Wars", release_year: 1977, director: "Georges Lucas" )
 
-  movies = Movie.create(title: "American Beauty", release_year: 2000, director: "Sam Mendes" )
 
-  movies = Movie.create(title: "Odyssé de l'espace", release_year: 1968, director: "Stanley Kubrick" )
+  director = Director.create(first_name: "Georges", last_name: "Lucas")
+  director = Director.create(first_name: "Sam", last_name: "Mendes" )
+  director = Director.create(first_name: "Stanley", last_name: "Kubrick" )
+  director = Director.create(first_name: "Darnell", last_name: "Martin" )
+  director = Director.create(first_name: "Philippe", last_name: "Dajoux" )
 
-  movies = Movie.create(title: "Cadillac records", release_year: 2008, director: "Darnell Martin" )
 
-  movies = Movie.create(title: "Les collègues", release_year: 1999, director: "Philippe Dajoux" )
+
+  movies = Movie.create(title: "Star Wars", release_year: 1977, director_id: 1)
+
+  movies = Movie.create(title: "American Beauty", release_year: 2000, director_id: 2 )
+
+  movies = Movie.create(title: "Odyssé de l'espace", release_year: 1968, director_id: 3 )
+
+  movies = Movie.create(title: "Cadillac records", release_year: 2008, director_id: 4 )
+
+  movies = Movie.create(title: "Les collègues", release_year: 1999, director_id: 5 )
+
+  
+
+
+
+
  
