@@ -6,7 +6,16 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-5.times do |index|
-  user = Movie.create(title: "Nom#{index}", release_year: "year#{index}", director: "Nom#{index}" )
+Movie.destroy_all
 
-end
+
+  movies = Movie.create(title: "Star Wars", release_year: 1977, director: "Georges Lucas" )
+
+  movies = Movie.create(title: "American Beauty", release_year: 2000, director: "Sam Mendes" )
+
+  movies = Movie.create(title: "Odyssé de l'espace", release_year: 1968, director: "Stanley Kubrick" )
+
+  movies = Movie.create(title: "Cadillac records", release_year: 2008, director: "Darnell Martin" )
+
+  movies = Movie.create(title: "Les collègues", release_year: 1999, director: "Philippe Dajoux" )
+ 
